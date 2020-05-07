@@ -1,5 +1,5 @@
 
-console.log('js script start');
+console.log('js script started');
 
 let files=document.getElementById('file');
 
