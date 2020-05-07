@@ -3,9 +3,6 @@ console.log('js script start');
 
 let files=document.getElementById('file');
 
-let imagesBlock =document.createElement('DIV');
-imagesBlock.classList.add('imagesBlock');
-document.body.appendChild(imagesBlock);
 
 
 
@@ -16,6 +13,8 @@ function uploadFiles(evt) {
  }
 
  document.getElementById('file').addEventListener('change',uploadFiles, false);
+
+
 
 
  (function(){
@@ -36,3 +35,6 @@ function uploadFiles(evt) {
       ReadFiles(files);
   }
 }());
+
+    
+

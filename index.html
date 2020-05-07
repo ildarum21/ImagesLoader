@@ -7,6 +7,10 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="overlay">
+
+    </div>
+
     <div class="title">
         <h1>interactive image loading</h1>
     </div>
@@ -17,9 +21,28 @@
         <p>or</p>
         <input type="file" id='file' accept='image/*' multiple/>
     </div>
+    <p>для того чтобы добавить изображение в избранные кликните по нему 
+        <br>
+        для того чтобы просмотреть изображение в модальном окне нажмите пкм по нему
+    </p>
+    <div class="wrapper">
+        <div class="progress">
+            <div class="progressLineBg">
+                <div class="progressLine" id="progressLine"></div>
+            </div>
+        </div>
+    </div>
+    <div class="imagesBlock">
+    </div>
+    
+    <label for="input">Показать только избранные </label>
+    <input type="checkbox" id='OnlyFavorite' >
 
     
 </body>
+<script src ='js/Favorite.js'></script>
+<script src="js/progress.js"></script>
 <script src="./js/FileReader.js"></script>
+<script src="./js/modal.js"></script>
 <script src="./js/main.js"></script>
 </html>
