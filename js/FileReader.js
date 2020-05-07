@@ -1,5 +1,6 @@
 let count=0;
 let loadCount;
+let ID=0;
 function ReadFiles(files){
   loadCount=0;
   progress(files.length);
@@ -10,19 +11,22 @@ function ReadFiles(files){
     for ( var i = 0,  f; f = files[i]; i++) {
         var reader = new FileReader();
         
+        
          reader.onload = (function() {
           
             return function(e) {
               
               loadCount++;
+
              var span = document.createElement('span');
              span.innerHTML = 
-             ['<img class="image usually" src="', e.target.result, '" />'].join('');
+             ['<img class="image usually" draggable="true" id ="',ID++,'" src="', e.target.result, '" />'].join('');
             imagesBlock.prepend(span);
          };
     })(f);
 
     reader.readAsDataURL(f);
     }
+    
 }
 

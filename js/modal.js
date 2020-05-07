@@ -15,7 +15,6 @@ imagesBlock.oncontextmenu=function(e){
     overlay.style.display='block';
 
     overlay.onclick =function(){
-        console.log('overlay');
         modal.style.display='none';
         overlay.style.display='none';
 
